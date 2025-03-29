@@ -1,0 +1,109 @@
+ *{
+    margin:0px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+nav{
+    background-color: black;
+    color:white;
+    width:100%;
+    height:15vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+
+}
+
+.navbar a{
+    color:white;
+    text-decoration: none;
+}
+
+ul{
+    display:flex;
+    gap:20px;
+    padding:0px;
+
+}
+
+li{
+    display:inline-block;
+    margin-right:30px;
+    margin-left:30px;
+}
+
+input{
+    height:27px;
+    width:205px;
+    border-radius: 10px;
+}
+
+body{
+height:100%;
+}
+
+/* .content{
+    height:80vh;
+} */
+
+h2{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    font-size:35px;
+    text-shadow: 0 0 5px #fff, 0 0 10px rgba(11, 11, 3, 0.001), 0 0 15px rgb(20, 20, 7), 0 0 20px #ff0;
+    animation: shine 1.5s infinite alternate;
+
+}
+
+@keyframes shine {
+    0% {
+        text-shadow: 0 0 5px #fff, 0 0 10px #ff0, 0 0 15px #ff0, 0 0 20px #ff0;
+    }
+    100% {
+        text-shadow: 0 0 10px #fff, 0 0 20px #ff0, 0 0 30px #ff0, 0 0 40px #ff0;
+    }
+}
+
+
+h4{
+    text-align:center;
+    padding-top: 25px;
+    font-style: italic;
+    font-size: larger
+}
+
+p{
+    font-size: 20px;
+}
+
+a{
+    color:black;
+} 
+
+.article-box{
+    width:80%;
+    min-height:auto;
+    max-width:900px;
+    margin:50px;
+    background:white;
+    padding:20px;
+    box-shadow:0px 4px 8px rgba(0,0,0,0.1);
+    border-radius:5px;
+    text-align:left;
+    position:relative;
+    height:auto;
+}
+
+.article-container{
+    max-height:400px;
+    overflow-y:auto;
+    border:1px solid #ccc;
+    padding:10px;
+    margin:auto;
+    background: #f9f9f9;
+}
+
+
+

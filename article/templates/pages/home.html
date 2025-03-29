@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block title %}
+{{title}}
+{% endblock title %}
+<!-- {% load static%}
+{% block style %}
+<link rel = "stylesheet" href="{% url static 'css/style.css' %}">
+{% endblock %} -->
+
+{% block content %}
+<h2><i>Welcome to home page😊😊😊</i></h2>
+<h4>{{data4}}</h4>
+<div class="article-container">
+{% for article in articles %}
+<div class="article-box">
+    <h3>{{forloop.counter }} <a href="{% url 'article' article.id  %}">{{article.title}}</a></h1>
+    <p>{{article.description}}</p><hr>
+</div>
+{% endfor %}
+</div>
+
+{{data4 }}
+{{data5}}
+
+
+
+
+{% endblock content %}
